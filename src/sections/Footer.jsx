@@ -1,10 +1,12 @@
 import React from 'react';
 import SpotlightText from '../components/ui/SpotlightText';
+import ContactForm from '../components/ContactForm';
+import MagneticButton from '../components/ui/MagneticButton'; // Kept if needed for other buttons, though ContactForm has its own.
 
 const Footer = () => {
     return (
         <section style={{ position: 'relative', background: '#000', color: '#fff', padding: '100px 20px', overflow: 'hidden' }}>
-            {/* ... preserved background effects ... */}
+            {/* Background effects could be added here if needed, keeping it clean for now as per previous version */}
 
             <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
                 <h2 style={{ fontSize: '3rem', marginBottom: '2rem' }}>Ready to <SpotlightText className="text-gradient">Move?</SpotlightText></h2>
@@ -16,31 +18,8 @@ const Footer = () => {
                         Let's Talk?
                     </SpotlightText>
 
-                    {/* Embedded Google Form Container */}
-                    <div style={{
-                        width: '100%',
-                        maxWidth: '640px',
-                        height: '800px',
-                        background: '#111',
-                        borderRadius: '20px',
-                        overflow: 'hidden',
-                        border: '1px solid #333',
-                        boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
-                        margin: '20px 0'
-                    }}>
-                        <iframe
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSf4mQLU9zjb1JAUW6kXsK9nlOLGcFE9yxsDK36beJ2KiFsOrQ/viewform?embedded=true"
-                            width="100%"
-                            height="100%"
-                            frameBorder="0"
-                            marginHeight="0"
-                            marginWidth="0"
-                            title="Project Request Form"
-                            style={{ background: '#fff' }}
-                        >
-                            Loading form...
-                        </iframe>
-                    </div>
+                    {/* Custom Contact Form connected to Google Sheets */}
+                    <ContactForm />
 
                     {/* Secondary - Direct Email */}
                     <div style={{ fontSize: '1rem', color: '#888' }}>
