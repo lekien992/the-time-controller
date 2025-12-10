@@ -29,7 +29,7 @@ const Footer = () => {
                         margin: '20px 0'
                     }}>
                         <iframe
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSdcY8X8x_U7Q6nC9p6qZ8z6wX8x_U7Q6nC9p6qZ8z6wX/viewform?embedded=true"
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSf4mQLU9zjb1JAUW6kXsK9nlOLGcFE9yxsDK36beJ2KiFsOrQ/viewform?embedded=true"
                             width="100%"
                             height="100%"
                             frameBorder="0"
