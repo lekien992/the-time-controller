@@ -1,4 +1,3 @@
-```javascript
 import React from 'react';
 import SpotlightText from '../components/ui/SpotlightText';
 
@@ -6,35 +5,35 @@ const Footer = () => {
     return (
         <section style={{ position: 'relative', background: '#000', color: '#fff', padding: '100px 20px', overflow: 'hidden' }}>
             {/* ... preserved background effects ... */}
-            
+
             <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
                 <h2 style={{ fontSize: '3rem', marginBottom: '2rem' }}>Ready to <SpotlightText className="text-gradient">Move?</SpotlightText></h2>
 
                 <div style={{ position: 'relative', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem' }}>
-                    <SpotlightText 
+                    <SpotlightText
                         style={{ fontSize: '15vw', fontWeight: '900', letterSpacing: '-0.05em', margin: 0, lineHeight: 1 }}
                     >
                         Let's Talk?
                     </SpotlightText>
-                
+
                     {/* Embedded Google Form Container */}
-                    <div style={{ 
-                        width: '100%', 
-                        maxWidth: '640px', 
-                        height: '800px', 
-                        background: '#111', 
-                        borderRadius: '20px', 
+                    <div style={{
+                        width: '100%',
+                        maxWidth: '640px',
+                        height: '800px',
+                        background: '#111',
+                        borderRadius: '20px',
                         overflow: 'hidden',
                         border: '1px solid #333',
                         boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
                         margin: '20px 0'
                     }}>
-                        <iframe 
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSdcY8X8x_U7Q6nC9p6qZ8z6wX8x_U7Q6nC9p6qZ8z6wX/viewform?embedded=true" 
-                            width="100%" 
-                            height="100%" 
-                            frameBorder="0" 
-                            marginHeight="0" 
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdcY8X8x_U7Q6nC9p6qZ8z6wX8x_U7Q6nC9p6qZ8z6wX/viewform?embedded=true"
+                            width="100%"
+                            height="100%"
+                            frameBorder="0"
+                            marginHeight="0"
                             marginWidth="0"
                             title="Project Request Form"
                             style={{ background: '#fff' }}
@@ -65,4 +64,3 @@ const Footer = () => {
 };
 
 export default Footer;
-```
