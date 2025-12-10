@@ -23,7 +23,7 @@ const Footer = () => {
 
                 <div style={{ marginTop: '100px', borderTop: '1px solid #111', paddingTop: '40px', color: '#444', fontSize: '0.9rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap' }}>
                     <div>
-                        &copy; {new Date().getFullYear()} The Time Controller.
+                        &copy; {new Date().getFullYear()} The Time Controller. <span style={{ opacity: 0.3, fontSize: '0.8em' }}>v1.1</span>
                     </div>
                     <div style={{ display: 'flex', gap: '20px' }}>
                         <a href="#" style={{ color: '#666', transition: 'color 0.2s' }}>Instagram</a>
