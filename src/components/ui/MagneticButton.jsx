@@ -24,8 +24,10 @@ const MagneticButton = ({ children, style, ...props }) => {
         setPosition({ x: 0, y: 0 });
     };
 
+    const Component = props.href ? motion.a : motion.button;
+
     return (
-        <motion.button
+        <Component
             ref={ref}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
@@ -40,14 +42,16 @@ const MagneticButton = ({ children, style, ...props }) => {
                 color: '#000',
                 borderRadius: '50px',
                 border: 'none',
-                cursor: 'none', // We'll rely on the magnet being the "cursor" interest
+                cursor: 'pointer',
                 fontWeight: 'bold',
+                display: 'inline-block', // Ensure anchor behaves like block for padding
+                textDecoration: 'none',
                 ...style
             }}
             {...props}
         >
             {children}
-        </motion.button>
+        </Component>
     );
 };
 
